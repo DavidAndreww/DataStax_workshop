@@ -20,7 +20,7 @@ export const slice = createSlice({
       state.idError = action.payload
     },
     // let's add a reducer that sets a loading state
-    setIdLoading: () => {
+    setIdLoading: (state, action) => {
       state.idLoading = action.payload
     }
   },
