@@ -10,9 +10,18 @@ export const slice = createSlice({
   name: "game",
   initialState,
   reducers: {
-    // let's add a reducer that sets the game id
+    // let's add a reducer that sets the game
+    setId: (state, action) => {
+      state.id = action.payload
+    },
     // let's add a reducer that sets an error message
+    setIdError: (state, action) => {
+      state.idError = action.payload
+    },
     // let's add a reducer that sets a loading state
+    setIdLoading: () => {
+      state.idLoading = action.payload
+    }
   },
 });
 
